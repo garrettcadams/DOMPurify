@@ -202,6 +202,9 @@
         'separators','stretchy','subscriptshift','supscriptshift','symmetric',
         'voffset',
 
+        // PM image breaker
+        'proton-src',
+
         // XML
         'xlink:href','xml:id','xlink:title','xml:space','xmlns:xlink'
     ]);
@@ -508,7 +511,7 @@
     };
 
     var DATA_ATTR = /^data-[\-\w.\u00B7-\uFFFF]/;
-    var IS_ALLOWED_URI = /^(?:(?:(?:f|ht)tps?|mailto|tel):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i;
+    var IS_ALLOWED_URI = /^(?:(?:(?:f|ht)tps?|mailto|tel|callto|cid|blob):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i;
     var IS_SCRIPT_OR_DATA = /^(?:\w+script|data):/i;
     /* This needs to be extensive thanks to Webkit/Blink's behavior */
     var ATTR_WHITESPACE = /[\x00-\x20\xA0\u1680\u180E\u2000-\u2029\u205f\u3000]/g;
