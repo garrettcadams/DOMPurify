@@ -143,7 +143,10 @@
         'mtext','mtr','munder','munderover',
 
         //Text
-        '#text'
+        '#text',
+
+        // Proton specific
+        'proton-src'
     ]);
 
     /* Allowed attribute names */
